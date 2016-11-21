@@ -1,5 +1,5 @@
 module.exports = {
-  [Symbol.iterator]: function * () {
+  *[Symbol.iterator] () {
     let [pre, cur] = [1, 0]
     while (true) {
       yield cur;
