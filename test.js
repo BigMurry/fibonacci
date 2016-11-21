@@ -5,7 +5,7 @@ describe('fibonacci < 100', () => {
     const r = []
     for (let value of fibo) {
       if (value > 100) break
-        r.push(value)
+      r.push(value)
     }
     assert(r.length === 12)
     assert(r[0] === 0)
