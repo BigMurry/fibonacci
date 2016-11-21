@@ -1,20 +1,33 @@
 const fibo = require('.')
 const assert = require('assert')
-describe('fibonacci < 100', () => {
-  it('fibo < 100', () => {
-    const r = [...fibo(100)]
-    assert(r.length === 12)
-    assert(r[0] === 0)
-    assert(r[1] === 1)
-    assert(r[2] === 1)
-    assert(r[3] === 2)
-    assert(r[4] === 3)
-    assert(r[5] === 5)
-    assert(r[6] === 8)
-    assert(r[7] === 13)
-    assert(r[8] === 21)
-    assert(r[9] === 34)
-    assert(r[10] === 55)
-    assert(r[11] === 89)
+const arrEqual = (arr1, ...arrs) => {
+  if (arrs.length < 1) {
+    return true
+  }
+  let ret = true
+  arrs.forEach((arr) => {
+    ret &= arr.length === arr1.length
+    arr.forEach((item, index) => {
+      ret &= item === arr1[index]
+    })
   })
+  return ret
+}
+const it = (log, test) => {
+  try {
+    test()
+    console.log(`${log}\t\t[Ok]`)
+  } catch (err) {
+    console.log(`${log}\t\t[Failed]`)
+    console.log(err)
+  }
+}
+
+it('test arrayEqual', () => {
+  assert(arrEqual([1, 2, 3], [1, 2, 3]))
+})
+it('test fibo < 100', () => {
+  const real = [...fibo(100)]
+  const expect = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  assert(arrEqual(real, expect))
 })
