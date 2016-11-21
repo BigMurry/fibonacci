@@ -1,3 +1,4 @@
 # fibonacci
 es6 fibonacci
-- fibonacci generator in < 10 lines of code
+- fibonacci generator in 9 lines of code
+- with no dependencies at all
