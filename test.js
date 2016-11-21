@@ -3,7 +3,7 @@ const assert = require('assert')
 describe('fibonacci < 100', () => {
   it('fibo < 100', () => {
     const r = [...fibo(100)]
-    console.log(r.length)
+    assert(r.length === 12)
     assert(r[0] === 0)
     assert(r[1] === 1)
     assert(r[2] === 1)
