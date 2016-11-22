@@ -1,5 +1,7 @@
 # feebo
-fibonacci numbers generator in es6
+fibonacci numbers generator
+
+_node >= 6.0.0_
 
 [![NPM](https://nodei.co/npm/feebo.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/feebo/)
 

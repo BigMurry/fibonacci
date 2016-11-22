@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "es6 fibonacci",
   "main": "index.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
     "test": "node test.js"
   },
