@@ -1,4 +1,9 @@
 # fibonacci
-es6 fibonacci
-- fibonacci generator in 9 lines of code
-- with no dependencies at all
+fibonacci numbers generator
+
+## key features
+- 9 lines
+- no recursion
+- no dependencies
+
+## MIT (c) BigMurry
