@@ -1,6 +1,8 @@
 # feebo
 fibonacci numbers generator
 
+[![NPM](https://nodei.co/npm/feebo.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/feebo/)
+
 ## key features
 - 9 lines
 - no recursion
