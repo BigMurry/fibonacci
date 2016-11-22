@@ -5,6 +5,7 @@ _node >= 6.0.0_
 
 [![NPM](https://nodei.co/npm/feebo.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/feebo/)
 
+[![Travis][travis-badge]][build]
 [travis-badge]:https://travis-ci.org/BigMurry/fibonacci.svg?branch=master
 [build]:https://travis-ci.org/BigMurry/fibonacci/
 
